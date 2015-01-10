@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>eCommerce</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="jquery.js"></script>
+        <script src="co.js"></script>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>    
+    <div id = "TotalItems">  
+    </div>
+    <p id ="right"><a href="co.html">CO </a>
+    <a id="cancel" onclick="reset()" href="#">Cancel </a>  </p>    
+    <h1><center>e-Commerce</center></h1>
+    <div id="sayhi"></div>
+      <div id="menu">
+        <ul>
+           <li><a href='index.html'>Home</a></li>
+           <li class=''><a href='#'>Products</a></li>
+           <li><a href='#'>About</a></li>
+           <li><a href='#'>Contact</a></li>
+        </ul>
+      </div>
+
+    <div id="container">
+        <div id="cat" width="">
+           <h2>Category</h2>
+            <div id='categori'>
+                <ul id="kategori">
+                     <li id="category" class="template"><a id="links" href=""><div id="isi"></div></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="display-content">
+            <div id="display-produk-list" class="template kiri"><div class="display-name-produk"></div><div class="nama-harga"><div id="nama" class=""></div><div id="harga" class=""></div></div><h2><div class="Jumlah"></div><div class="subtotal"></div></h2></div>
+        </div>
+        <h2><div class="total"></div><div class="grandtotal"></div></h2>
+        <div class = "datapelanggan">
+        <form action="co.php" method="post">
+        <table >
+        <tr align="right"><td>Nama Pelanggan: </td><td><input type="text" name="namapelanggan"></td>
+        </tr><tr align="right"><td>Nomor Telfon:</td><td>  <input type="text" name="nomor"></td>
+        </tr><tr align="right"><td>Alamat: </td><td><input type="text" name="alamat"></td>
+        </tr></table>
+        <input id="kode" type="hidden" name="kode-barang" value="">
+        <input id="jumlah" type="hidden" name="jumlah" value="">
+        <input id="banyakdata" type="hidden" name="banyakdata" value=""><br/>
+        <input type="submit"><a id="cancel" onclick="reset()" href="#">Cancel </a>
+        </form>
+        </div>
+    </div>
+    </body>
+</html>
